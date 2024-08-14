@@ -1,4 +1,5 @@
-export interface Icon {
+export interface IconSide {
+    
     id: number;
     iconClass: string;
     altText: string;

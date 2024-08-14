@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { computed, ref } from "vue";
-import type { Icon } from "@/interfaces/Icon";
+import type { Icon } from "@/interfaces/searchMenu/Icon";
 // @ts-ignore
 import { getIconsSearch } from "@/data/searchBar/iconsSearchBar.js";
 
@@ -39,7 +39,7 @@ const profileIcon = computed(() => {
 @import "/src/assets/styles/_variables.scss";
 
 .conteiner {
-  width: 90%;
+  width: 96%;
   height: 50px;
   display: flex;
   margin-top: 15px;
