@@ -1,35 +1,34 @@
 <script lang="ts" setup>
 //imports
-import SearchBar from '@/components/general/SearchBar.vue';
-import LeftSideMenu from '@/components/general/LeftSideMenu.vue';
+import SearchBar from "@/components/general/SearchBarComponent.vue";
+import LeftSideMenu from "@/components/general/LeftSideMenuComponent.vue";
+import CardComponent from "@/components/general/CardComponent.vue";
 </script>
 
 <template>
-    <div class="main-conteiner">
-        <LeftSideMenu />
+  <div class="main-conteiner">
+    <LeftSideMenu />
 
-        <div class="bar-top"> 
-            <SearchBar />
-        </div>
+    <div class="conteiner-content">
+      <SearchBar />
+      <CardComponent />
     </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
+@import "/src/assets/styles/_variables.scss";
+
 .main-conteiner {
-    display: flex;
-    height: 100%;
+  height: 100%;
+  display: flex;
+  background-color: $primary-color;
+}
 
-    .SearchBar {
-        flex: 0 0 60px;
-    }
-
-    .bar-top {
-
-        display: flex;
-        align-items: flex-start;
-        padding: 10px 20px;
-        width: 100%;
-    }
-
+.conteiner-content {
+  flex: 1;
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
 }
 </style>
