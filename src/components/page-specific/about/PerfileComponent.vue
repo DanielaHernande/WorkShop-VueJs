@@ -3,9 +3,9 @@
 import AboutComponent from "@/components/page-specific/about/AboutComponent.vue";
 import ActivityTimeline from "@/components/page-specific/about/ActivityTimeline.vue";
 import OverviewComponent from "@/components/page-specific/about/OverviewComponent.vue";
-import ConecctionComponent from "./ConecctionComponent.vue";
-import TeamsComponent from "./TeamsComponent.vue";
-import TableComponent from "./TableComponent.vue";
+import ConecctionComponent from "@/components/page-specific/about/ConnectionComponent.vue"
+import TeamsComponent from "@/components/page-specific/about/TeamsComponent.vue";
+import TableComponent from "@/components/page-specific/about/TableComponent.vue";
 </script>
 
 <template>
