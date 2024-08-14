@@ -3,6 +3,7 @@
 import SearchBar from "@/components/general/SearchBarComponent.vue";
 import LeftSideMenu from "@/components/general/LeftSideMenuComponent.vue";
 import CardComponent from "@/components/general/CardComponent.vue";
+import TabsComponent from "@/components/general/TabsComponent.vue";
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import CardComponent from "@/components/general/CardComponent.vue";
     <div class="conteiner-content">
       <SearchBar />
       <CardComponent />
+      <TabsComponent />
     </div>
   </div>
 </template>

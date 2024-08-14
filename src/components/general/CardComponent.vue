@@ -89,9 +89,9 @@ const joinedDate = ref<string>("Joined April 2021");
 }
 
 .avatar {
-  top: -40px;
-  width: 100px;
-  height: 100px;
+  top: -30px;
+  width: 110px;
+  height: 110px;
   border-radius: 8px;
   position: relative;
   margin-right: 1rem;
