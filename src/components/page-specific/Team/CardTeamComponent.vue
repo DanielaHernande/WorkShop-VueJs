@@ -5,7 +5,6 @@ import { getApiTeams } from "@/data/apisTeam/apiTeams";
 // @ts-ignore
 import { tagsColor } from "@/data/apisTeam/tagsColor";
 
-import type { Member } from "@/interfaces/Team/Member";
 import type { TagStyles } from "@/interfaces/Team/TagStyles";
 import type { Team } from "@/interfaces/Team/Team";
 

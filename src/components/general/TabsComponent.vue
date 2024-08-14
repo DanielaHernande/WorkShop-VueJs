@@ -3,6 +3,7 @@ import { computed, ref } from "vue";
 
 import PerfileComponent from "../page-specific/About/PerfileComponent.vue";
 import CardTeamComponent from "../page-specific/Team/CardTeamComponent.vue";
+import CardProjectComponent from "../page-specific/Project/CardProjectComponent.vue";
 
 import type { Tabs } from "@/interfaces/tabs/ApiTabs";
 // @ts-ignore
@@ -25,7 +26,7 @@ const currentTab = computed(() => {
       return CardTeamComponent;
 
     case "Projects":
-      return "Projects";
+      return CardProjectComponent;
 
     case "Connections":
       return "Connections";
