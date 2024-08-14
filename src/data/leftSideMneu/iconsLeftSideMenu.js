@@ -1,0 +1,23 @@
+export const getIconsLeft = [
+
+    {id: 1, iconClass: 'logo', urlImage: 'public/img/Vuexy.png', altText: 'Logo'},
+    {id: 2, iconClass: 'bi bi-house', altText: 'Home'},
+    {id: 3, iconClass: 'fa-regular fa-file', altText: 'Files'},
+    {id: 4, iconClass: 'bi bi-cart', altText: 'Cart'},
+    {id: 5, iconClass: 'fa-solid fa-graduation-cap', altText: 'Graduation'},
+    {id: 6, iconClass: 'bi bi-truck', altText: 'Truck'},
+    {id: 7, iconClass: 'fa-regular fa-envelope', altText: 'Envelope'},
+    {id: 8, iconClass: 'fa-regular fa-comment', altText: 'Message'},
+    {id: 9, iconClass: 'bi bi-calendar-date', altText: 'Calendar'},
+    {id: 10, iconClass: 'bi bi-bar-chart', altText: 'Chart'},
+    {id: 11, iconClass: 'fa-regular fa-file-lines', altText: 'Files'},
+    {id: 12, iconClass: 'fa-regular fa-user', altText: 'User'},
+    {id: 13, iconClass: 'bi bi-lock', altText: 'Lock'},
+    {id: 14, iconClass: 'fa-regular fa-file', altText: 'File'},
+    {id: 15, iconClass: 'bi bi-shield-lock', altText: 'Shield'},
+    {id: 16, iconClass: 'fa-solid fa-ellipsis', altText: 'Ellipsis'},
+    {id: 17, iconClass: 'fa-regular fa-square', altText: 'Square'},
+    {id: 18, iconClass: 'fa-solid fa-grip-lines', altText: 'Line'},
+    {id: 19, iconClass: 'fa-solid fa-a', altText: 'Letter'},
+    {id: 20, iconClass: 'bi bi-terminal', altText: 'Terminal'},
+]
