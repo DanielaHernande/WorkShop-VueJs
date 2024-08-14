@@ -77,6 +77,7 @@ const currentTab = computed(() => {
     }
 
     &:hover {
+      transition: ease-out 1s;
       color: $button-title-color;
       background-color: $main-button-color-hover;
     }
