@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { computed, ref } from "vue";
 
-import PerfileComponent from "../page-specific/about/PerfileComponent.vue";
+import PerfileComponent from "../page-specific/About/PerfileComponent.vue";
+import CardTeamComponent from "../page-specific/Team/CardTeamComponent.vue";
 
 import type { Tabs } from "@/interfaces/tabs/ApiTabs";
 // @ts-ignore
@@ -21,7 +22,7 @@ const currentTab = computed(() => {
       return PerfileComponent;
 
     case "Team":
-      return "Team";
+      return CardTeamComponent;
 
     case "Projects":
       return "Projects";
