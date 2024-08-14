@@ -28,8 +28,8 @@
     margin-left: 75px;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 8px #adadad;
     background-color: $secondary-color;
+    box-shadow: 0 2px 8px $shadow-color;
 
     h3 {
         font-size: 12PX;
