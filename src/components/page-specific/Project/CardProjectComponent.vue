@@ -84,7 +84,8 @@ const getTagStyle = (
   </div>
 </template>
 
-<style lang="scss" scoped> 
+<style lang="scss" scoped>
+@import "/src/assets/styles/_variables.scss";
 
 .project-grid {
   gap: 1rem;
@@ -102,7 +103,7 @@ const getTagStyle = (
     border-radius: 12px;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px $shadow-color;
   }
 
   .project-header {
@@ -129,7 +130,7 @@ const getTagStyle = (
       .client-name {
         margin: 0;
         font-size: 0.9em;
-        color: #888;
+        color: $secondary-title;
       }
     }
 
@@ -146,20 +147,20 @@ const getTagStyle = (
   }
 
   .budget {
-    background: #f3f3f3;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 10px;
+    background: #e2e2e4;
 
     p {
       margin: 0;
-      color: #4b4b4b;
       font-size: 0.9em;
+      color: $button-title;
     }
 
     .total-budget {
+      color: $secondary-title;
       font-size: 0.8em;
-      color: #888;
     }
   }
 
@@ -169,31 +170,31 @@ const getTagStyle = (
 
     p {
       margin: 4px 0;
-      color: #556;
       font-size: 0.9em;
+      color: $secondary-title;
     }
   }
 
   .total-budget {
-    color: #888;
+    color: $button-title;
     font-size: 0.8rem;
   }
 
   .description {
-    color: #555;
     font-size: 0.9em;
     margin-bottom: 20px;
+    color: $button-title;
   }
 
   .info-hours {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
 
     .par {
       margin: 4px 0;
-      color: #556;
+      color: $secondary-title;
       font-size: 0.9em;
     }
 
@@ -211,27 +212,27 @@ const getTagStyle = (
     border-radius: 5px;
     position: relative;
     margin-bottom: 10px;
-    background: #f0f0f0;
+    background: $shadow-color;
   }
 
   .progress {
     height: 100%;
     border-radius: 5px;
-    background: #7367ef;
+    background: $main-button-color;
   }
 
   .progress-text {
     top: -4px;
     right: 10px;
     font-size: 0.6em;
-    color: #383838;
     position: absolute;
+    color: $main-titles;
   }
 
   .footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
     .avatars {
       display: flex;
@@ -241,20 +242,20 @@ const getTagStyle = (
         height: 30px;
         border-radius: 50%;
         margin-right: -10px;
-        border: 2px solid #fff;
+        border: 2px solid $secondary-color;
       }
     }
   }
 
   .member {
-    color: #888;
     margin-top: 11px;
     font-size: 0.8em;
+    color: $secondary-title;
   }
 
   .comments {
     font-size: 1em;
-    color: #888;
+    color: $secondary-title;
   }
 }
 </style>

@@ -4,6 +4,7 @@ import { computed, ref } from "vue";
 import PerfileComponent from "../page-specific/About/PerfileComponent.vue";
 import CardTeamComponent from "../page-specific/Team/CardTeamComponent.vue";
 import CardProjectComponent from "../page-specific/Project/CardProjectComponent.vue";
+import PerfileCardComponent from "../page-specific/Connection/PerfileCardComponent.vue";
 
 import type { Tabs } from "@/interfaces/tabs/ApiTabs";
 // @ts-ignore
@@ -29,7 +30,7 @@ const currentTab = computed(() => {
       return CardProjectComponent;
 
     case "Connections":
-      return "Connections";
+      return PerfileCardComponent;
 
     default:
       return null;
