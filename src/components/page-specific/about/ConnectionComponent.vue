@@ -5,7 +5,7 @@ import type { User } from "@/interfaces/About/About";
 // @ts-ignore
 import { getUsers } from "@/data/about/apiUsers.js";
 
-const users = reactive<User[]>(await getUsers());
+const users = reactive<User[]>( getUsers());
 
 const toggleIcon = (index: number) => {
   users[index].icon =
@@ -50,7 +50,7 @@ const toggleIcon = (index: number) => {
   padding: 1rem;
   border-radius: 8px;
   background-color: $secondary-color;
-  box-shadow: 0 2px 8px #adadad;
+  box-shadow: 0 2px 8px $shadow-color;
 
   h3 {
     font-size: 16px;

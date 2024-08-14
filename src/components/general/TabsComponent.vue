@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import { computed, ref } from "vue";
 
+import PerfileComponent from "../page-specific/about/PerfileComponent.vue";
+
 import type { Tabs } from "@/interfaces/tabs/ApiTabs";
 // @ts-ignore
 import { getTabs } from "@/data/tabs/apiTabs.js";
@@ -16,7 +18,7 @@ const seletedTabs = (tabName: string) => {
 const currentTab = computed(() => {
   switch (activeTab.value) {
     case "Profile":
-      return "Profile";
+      return PerfileComponent;
 
     case "Team":
       return "Team";

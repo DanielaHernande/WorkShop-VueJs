@@ -62,7 +62,7 @@ const joinedDate = ref<string>("Joined April 2021");
 @import "/src/assets/styles/_variables.scss";
 
 .profile-card {
-  width: 96%;
+  width: 95%;
   //height: 295px;
   //margin: auto;
   overflow: hidden;

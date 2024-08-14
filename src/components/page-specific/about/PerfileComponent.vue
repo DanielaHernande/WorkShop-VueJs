@@ -47,12 +47,12 @@ import TableComponent from "@/components/page-specific/about/TableComponent.vue"
 }
 
 .bottom-section {
-  gap: 1rem;
+  gap: 2rem;
   top: -49px;
   display: grid;
   position: relative;
   justify-items: end;
-  margin-right: 110px;
+  margin-right: 60px;
   grid-template-columns: 3fr 8fr 7fr;
 }
 
@@ -60,7 +60,7 @@ import TableComponent from "@/components/page-specific/about/TableComponent.vue"
   top: -20px;
   display: grid;
   position: relative;
-  margin-right: 90px;
+  margin-right: 56px;
   margin-bottom: 20px;
   justify-content: end;
 }

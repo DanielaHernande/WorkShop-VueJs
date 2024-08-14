@@ -57,14 +57,14 @@
 
 .about-card {
 
-    width: 400px;
+    width: 422px;
     height: 450px;
-    margin-left: 75px;
     padding: 1rem;
-    background-color: $secondary-color;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 8px #adadad;
+    margin-left: 20px;
     margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: $secondary-color;
+    box-shadow: 0 2px 8px $shadow-color;
 
     h3 {
         font-size: 12PX;

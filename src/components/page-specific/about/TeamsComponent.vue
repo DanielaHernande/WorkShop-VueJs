@@ -37,8 +37,8 @@ const teams = ref<Team[]>(getTeams());
   height: 440px;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 8px #adadad;
   background-color: $secondary-color;
+  box-shadow: 0 2px 8px $shadow-color;
 
   h3 {
     font-size: 16px;

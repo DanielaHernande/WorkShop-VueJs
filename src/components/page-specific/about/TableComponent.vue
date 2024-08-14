@@ -137,12 +137,12 @@ const nextPage = () => {
 @import "/src/assets/styles/_variables.scss";
 
 .project-table {
-  width: 970px;
+  width: 933px;
   height: 490px;
   padding: 1rem;
   border-radius: 8px;
   background-color: $secondary-color;
-  box-shadow: 0 0 10px $shadow-color;
+  box-shadow: 0 2px 8px $shadow-color;
 
   .table-header {
     display: flex;

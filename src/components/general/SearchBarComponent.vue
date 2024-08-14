@@ -39,7 +39,7 @@ const profileIcon = computed(() => {
 @import "/src/assets/styles/_variables.scss";
 
 .conteiner {
-  width: 96%;
+  width: 95%;
   height: 50px;
   display: flex;
   margin-top: 15px;

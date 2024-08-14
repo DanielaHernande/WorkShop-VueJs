@@ -21,11 +21,11 @@
 @import "/src/assets/styles/_variables.scss";
 
 .section {
-    width: 400px;
+    width: 422px;
     height: 140px;
     padding: 1rem;
     margin-top: 50px;
-    margin-left: 75px;
+    margin-left: 20px;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     background-color: $secondary-color;
