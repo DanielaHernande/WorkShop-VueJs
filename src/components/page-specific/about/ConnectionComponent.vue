@@ -1,12 +1,16 @@
 <script lang="ts" setup>
+// Import
 import { reactive, ref } from "vue";
 import type { User } from "@/interfaces/About/About";
 
 // @ts-ignore
+// Importing the users data
 import { getUsers } from "@/data/about/apiUsers.js";
 
-const users = reactive<User[]>( getUsers());
+// Creating a reactive array of users
+const users = reactive<User[]>(getUsers());
 
+// Function to toggle the icon when the button is clicked
 const toggleIcon = (index: number) => {
   users[index].icon =
     users[index].icon === "fa-solid fa-user-check"
@@ -27,6 +31,7 @@ const toggleIcon = (index: number) => {
         <p class="connections">{{ user.connections }}</p>
       </div>
 
+      <!-- Button to toggle the icon -->
       <button
         @click="toggleIcon(index)"
         :class="[

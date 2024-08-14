@@ -9,6 +9,7 @@ import { getColorsConnection } from "@/data/apiConnection/tagColorConneciosn.js"
 import type { Perfil } from "@/interfaces/Connection/Perfil";
 import type { TagStyle, TagStyles } from "@/interfaces/Connection/TagStyles";
 
+// State to store profiles and tag styles
 const perfiles = ref<Perfil[]>(getPerfiles());
 const tagStyles: TagStyles = getColorsConnection();
 
@@ -19,6 +20,7 @@ const getTagStyle = (
   return tagStyles[tag] || { color: "#333", backgroundColor: "#f0f0f0" };
 };
 
+// Function to toggle the icon for a profile
 const toggleIcon = (index: number): void => {
   perfiles.value[index].icon =
     perfiles.value[index].icon === "fa-solid fa-user-plus"

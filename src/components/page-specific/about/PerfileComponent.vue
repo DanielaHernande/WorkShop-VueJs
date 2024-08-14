@@ -1,11 +1,11 @@
 <script lang="ts" setup>
 // Import components to be used in this template
-import AboutComponent from "@/components/page-specific/about/AboutComponent.vue";
-import ActivityTimeline from "@/components/page-specific/about/ActivityTimeline.vue";
-import OverviewComponent from "@/components/page-specific/about/OverviewComponent.vue";
-import ConecctionComponent from "@/components/page-specific/about/ConnectionComponent.vue"
-import TeamsComponent from "@/components/page-specific/about/TeamsComponent.vue";
-import TableComponent from "@/components/page-specific/about/TableComponent.vue";
+import AboutComponent from "@/components/page-specific/About/AboutComponent.vue";
+import ActivityTimeline from "@/components/page-specific/About/ActivityTimeline.vue";
+import OverviewComponent from "@/components/page-specific/About/OverviewComponent.vue";
+import ConecctionComponent from "@/components/page-specific/About/ConnectionComponent.vue"
+import TeamsComponent from "@/components/page-specific/About/TeamsComponent.vue";
+import TableComponent from "@/components/page-specific/About/TableComponent.vue";
 </script>
 
 <template>

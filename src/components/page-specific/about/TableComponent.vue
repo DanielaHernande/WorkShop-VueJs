@@ -1,42 +1,56 @@
 <script lang="ts" setup>
 import { ref, computed, onMounted } from "vue";
-// @ts-ignore
+// @ts-ignore Ignore TypeScript errors for this import
 import { getProjects } from "@/data/about/apiProjects.js";
 
 import type { Project } from "@/interfaces/About/Project";
 
+// Reactive state to store the list of projects
 const projects = ref<Project[]>([]);
+// Reactive state to store the search query
 const searhQuery = ref<string>("");
+// Reactive state to store the current page in pagination
 const currentPage = ref<number>(1);
+// Reactive state to store the number of items per page
 const itemsPerPage = ref<number>(5);
 
+// Hook that runs when the component is mounted
 onMounted(async () => {
+    // Fetch the list of projects from the API and update the state
   const response = await getProjects();
   projects.value = response;
 });
 
+// Computed property to get the filtered and paginated list of projects
 const filteredProjects = computed(() => {
+    // Filter projects based on the search query
   const filtered = projects.value.filter((project) =>
     project.name.toLowerCase().includes(searhQuery.value.toLowerCase())
   );
+  // Calculate the start index for pagination
   const startIndex = (currentPage.value - 1) * itemsPerPage.value;
+  // Return the paginated projects
   return filtered.slice(startIndex, startIndex + itemsPerPage.value);
 });
 
+// Computed property to calculate the total number of pages for pagination
 const totalPages = computed(() => {
   return Math.ceil(projects.value.length / itemsPerPage.value);
 });
 
+// Function to change the current page
 const changePage = (page: number) => {
   currentPage.value = page;
 };
 
+// Function to go to the previous page
 const previousPage = () => {
   if (currentPage.value > 1) {
     currentPage.value--;
   }
 };
 
+// Function to go to the next page
 const nextPage = () => {
   if (currentPage.value < totalPages.value) {
     currentPage.value++;

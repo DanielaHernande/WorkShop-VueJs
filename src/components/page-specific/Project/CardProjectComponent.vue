@@ -8,9 +8,13 @@ import { getTagColor } from "@/data/apiProjects/apiTagColors";
 import type { Project } from "@/interfaces/Project/Project";
 import type { TagStyles } from "@/interfaces/Project/TagStyles";
 
+
+// Initialize the projects data from the API
 const infoProjects = ref<Project[]>(getProjects());
+// Initialize the tag color styles from the API
 const tagStyles: TagStyles = getTagColor();
 
+// Function to get the style for a tag, defaulting to a fallback style if the tag is not found
 const getTagStyle = (
   tag: string
 ): { color: string; backgroundColor: string } => {
